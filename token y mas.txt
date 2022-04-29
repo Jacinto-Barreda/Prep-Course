@@ -1,0 +1,31 @@
+token
+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
+
+or create a new repository on the command line
+echo "# Repositorio-henrry" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Jacinto-Barreda/Repositorio-henrry.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/Jacinto-Barreda/Repositorio-henrry.git
+git branch -M main
+git push -u origin main
+
+Primero: Guardar la URL del repositorio de GitHub con el nombre de origin
+git remote add origin <URL>
+Segundo: Verificar que la URL se haya guardado correctamente
+git remote
+git remote -v
+Tercero: Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. 
+Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories:
+
+git pull origin master--allow-unrelated-histories
+
+Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub
+
+git push origin master
