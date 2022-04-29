@@ -1,0 +1,14 @@
+Variable:
+Es un espacio en memoria para alojar datos, ya sea numerico, texto y booleano.
+
+String
+Es un tipo de datos, que se puede asiganar a una variable. Se maneja caracteres ya sea texto o numero.
+
+Funciones
+Es un bloque de codigo para realizar una instruccion, se peude define parametros.
+
+Declaraciones IF
+Se puede evaluar una condicion, para realizar una o varias intrucciones.
+
+Valores booleanos
+Es un dato logico, puede ser verdadero o falso.
