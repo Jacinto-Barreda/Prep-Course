@@ -35,20 +35,21 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x +y;
+  var suma= x+y;
+  return suma;
 
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  resta(x-y);
+  return x-y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  multiplica(x * y);
+  return x * y;
 }
 
 function divide(x, y) {
@@ -73,8 +74,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.length === str2.length;
-
+  if (str1.length === str2.length){
+     return true;
+  }
+  return false;
 }
 
 function menosQueNoventa(num) {
@@ -145,7 +148,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow(num, 2);
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
@@ -163,7 +166,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random;
+  return Math.random(0,1);
 }
 
 function esPositivo(numero) {
