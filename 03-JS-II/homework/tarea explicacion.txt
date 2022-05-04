@@ -1,0 +1,13 @@
+for
+es un bucle o una estructura que permite un ciclo de una instrucción. Donde se aplica una
+condición.
+
+ `&&`, 
+ Es un operador logico, donde se expresa la condición AND
+
+ `||`, 
+ es un operador logico,donde se determina un valor true o false, y significa o
+ 
+ 
+ `!`
+ Es un operador lógio, significa O y devulve un booleano.
