@@ -165,7 +165,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var num= toString(n); 
+  var num= String(n); 
   // combertir el numero en cadena para ubicar el primer digito
   if (num[0]=== '9'){
     return true;
@@ -222,8 +222,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-
-  
+ var resul=[];
+  for (var i= 0 ; i<array.length; i++){
+   if (array[i]>100){
+      resul.push(array[i]);
+   }
+ }
+  return resul;
 }
 
 
@@ -235,6 +240,19 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var arr=[];
+
+  var i= 0;
+  while (i<10){
+    numero+=2;
+    i++;
+    arr.push(numero);
+    if(i=== (numero +2)){
+      return "Se interrumpió la ejecución"
+     
+    }
+  }
+  return arr;
 }
 
 
@@ -245,6 +263,20 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var asd=[];
+  var i=0;
+while(i<10){
+  i++;
+  if (i=== 5){
+    continue;
+  }
+ numero= numero+2;
+ asd.push(numero);
+
+}
+return asd;
+
+
 }
 
 
